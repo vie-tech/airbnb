@@ -18,7 +18,7 @@ export default function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    localStorage.setItem("mode", mode);
+    localStorage.setItem("mode", mode); 
   }, [mode]);
 
   return (
