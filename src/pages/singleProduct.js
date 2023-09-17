@@ -65,6 +65,21 @@ function SingleProduct() {
         <h1>Instructions <img src={instructionIcon} alt="" className="cooking-icon" /></h1>
         <p>{meal.strInstructions}</p>
       </div>}
+
+      { meal && <div className="measurements">
+        <h1>Measurements</h1>
+        <ul>
+          <li>{meal.strMeasure1}</li>
+          <li>{meal.strMeasure2}</li>
+          <li>{meal.strMeasure3}</li>
+          <li>{meal.strMeasure4}</li>
+          <li>{meal.strMeasure5}</li>
+          <li>{meal.strMeasure6}</li>
+          <li>{meal.strMeasure7}</li>
+          <li>{meal.strMeasure8}</li>
+          <li>{meal.strMeasure9}</li>
+        </ul>
+      </div>}
     </div>
   );
 }
