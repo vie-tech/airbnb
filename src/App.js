@@ -17,6 +17,8 @@ export default function App() {
 
   const dispatch = useDispatch();
 
+
+  //This is to save the mode in local storage
   useEffect(() => {
     localStorage.setItem("mode", mode); 
   }, [mode]);
@@ -39,7 +41,7 @@ export default function App() {
           <Route path="signup" element={<SignUp />} />
           <Route path="about" element={<About mode={mode} />} />
           <Route path="shop" element={<Shop mode={mode} />} />
-          <Route path="shop/:shopId" element={<SingleProduct />} />
+          <Route path="shop/:shopId" element={<SingleProduct />} /> {/*  This is to nest singleProducts in the shop comp*/}
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="*" element={<Error />} />
           
