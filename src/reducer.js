@@ -72,6 +72,7 @@ const changeModeSlice = createSlice({
       state.favCount= 0
       
     },
+    //These are to handle the login details on the input box
 
     inputUserName: (state, action)=>{
       state.userData.username = action.payload

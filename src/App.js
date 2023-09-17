@@ -17,7 +17,7 @@ export default function App() {
 
   const dispatch = useDispatch();
 
-
+  
   //This is to save the mode in local storage
   useEffect(() => {
     localStorage.setItem("mode", mode); 
