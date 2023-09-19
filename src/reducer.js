@@ -69,9 +69,9 @@ const changeModeSlice = createSlice({
       localStorage.removeItem("favourite")
       state.favourite = []
       state.favCount= 0
-      
     },
-    //Login details stuff
+
+    //Login details stuff and onchange handlers
 
     inputUserName: (state, action)=>{
       state.userData.username = action.payload
