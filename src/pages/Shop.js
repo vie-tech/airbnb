@@ -15,7 +15,7 @@ export default function Shop(props) {
   const favourite = useSelector(state => state.mode.favourite);
   const favCount = useSelector(state => state.mode.favCount);
   const dispatch = useDispatch();
-
+ 
   
 
   const foodList = meal && meal.map((item) => {
@@ -61,7 +61,7 @@ export default function Shop(props) {
 
   useEffect(() => {
     
-   
+   dispatch(initializeFavourite())
     startSearch(inputFood);
   }, [inputFood]);
 

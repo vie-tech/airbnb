@@ -4,9 +4,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   mode: localStorage.getItem("mode") === "true" ? true : false,
-  favourite: [],
+  favourite: JSON.parse(localStorage.getItem("favourite")),
   favCount: 0,
-
   userData:{
   username: "",
   password: "",
@@ -50,7 +49,7 @@ const changeModeSlice = createSlice({
     },
 
     // New action to initialize the favorite list from local storage
-    initializeFavourite: (state, action) => {
+    initializeFavourite: (state) => {
       const storedFavourite = localStorage.getItem("favourite");
 
       if (storedFavourite) {

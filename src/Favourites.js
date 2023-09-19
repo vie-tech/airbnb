@@ -11,14 +11,11 @@ export default function Favourites(props){
 
     <ShopProduct product={mealCount}/>
 
-  
-
-   
     return(
         <>
         <div className="favourites-container">
         <img src={props.img} className="favourites-img" onClick={()=>{props.handleClick2()}}/> 
-       <NavLink to={`/shop/${props.idForShop}`}> <p>{props.name}</p> </NavLink>
+       <NavLink to={`/shop/${props.idForShop}`} className='fav-link'> <p>{props.name}</p> </NavLink>
        
 
        

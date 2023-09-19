@@ -11,7 +11,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { changeToDark } from "./reducer";
 import SingleProduct from "./pages/singleProduct";
 import Dashboard from "../src/pages/dashboard";
-
+ 
 export default function App() {
   const { mode } = useSelector((state) => state.mode);
 
@@ -34,7 +34,7 @@ export default function App() {
               handleClick={() => {
                 dispatch(changeToDark());
               }}
-            />
+            />   
           }
         >
           <Route index element={<Homepage mode={mode} />} />
