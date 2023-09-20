@@ -8,7 +8,7 @@ export default function Card(props){
     if(props.openSlots === 0){
         badgeText = "SOLD OUT"
     }else if(props.openSlots !== 0){
-        badgeText = "ONLINE" //for display purposes
+        badgeText = "ONLINE" //for display purposes and beauty
     }
 
     return(
