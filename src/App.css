@@ -262,8 +262,35 @@ input {
 
 .about-photo {
   width: 550px;
-  transform: translate(120px, 60px);
+  transform: translate(40px, 60px);
 }
+
+.no-opacity {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.about-photo2{
+  width: 550px;
+  transform: translate(40px, -820px);
+ opacity: 0;
+ transition: 0.4s;
+}
+
+.active{
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.col2{
+
+  height: 800px;
+ 
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .objective-container {
   transform: translateY(-60px);

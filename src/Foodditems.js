@@ -14,8 +14,8 @@ export default function Foodcard(props){
         <li className="ingridients">{props.ingridient1}</li>
         <li className="ingridients">{props.ingridient2}</li>
         <li className="ingridients">{props.ingridient3}</li>
-         
+          
         </div>
         </>
     )
-}
+} 

@@ -1,7 +1,7 @@
 import React from "react"
 import Time from "./Time"
 import group from "./react photos/newlineofpeople.jpg"
-import powderWoman from "../src/react photos/woman posing.jpg"
+import powderWoman from "../src/react photos/woman posing.png"
 
 export default function Hero(props){
 

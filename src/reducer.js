@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   mode: localStorage.getItem("mode") === "true" ? true : false,
-  favourite: JSON.parse(localStorage.getItem("favourite")),
+  favourite: JSON.parse(localStorage.getItem("favourite")) || [],
   favCount: 0,
   userData:{
   username: "",
@@ -31,6 +31,9 @@ const changeModeSlice = createSlice({
 
     addFavourite: (state, action) => {
 
+      /* if (state.favourite === null) {
+        state.favourite = [];
+      } */
       const isDuplicate = state.favourite.some(
         (favFood) => favFood.idMeal === action.payload.idMeal
       );
@@ -62,7 +65,10 @@ const changeModeSlice = createSlice({
       state.favourite = state.favourite.filter(
         (favFood) => favFood.idMeal !== action.payload.idMeal
       );
+      localStorage.removeItem("favourite")
        state.favCount --
+      
+
     },
 
     clearFavourites: (state)=>{

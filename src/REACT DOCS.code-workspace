@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../HTML, CSS AND JAVASCRIPT CODES"
+		},
+		{
+			"path": "../../../CSS FRAMEWORKS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML, CSS AND JAVASCRIPT CODES"
+	}
+}

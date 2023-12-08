@@ -1,6 +1,6 @@
 import React from "react";
-import aboutPhoto from "../react photos/about-page-picture-2.jpg";
-import powderSplash from "../react photos/happy-african-woman-yellow-jacket.jpg"
+import aboutPhoto from "../react photos/about-page-picture-2-PSEDIT.png";
+import powderSplash from "../react photos/happy-african-woman-yellow-jacket.png"
 import aboutUs from "../react photos/About SVG.svg"
 import darkmodepic from "../react photos/man.png"
 
@@ -29,7 +29,8 @@ export default function About(props) {
           </div>
 
           <div className="col2">
-            <img src={props.mode ? powderSplash : aboutPhoto} className="about-photo" />
+            <img src={ aboutPhoto} className={`about-photo ${props.mode ? "no-opacity" : ""}`} alt='ass' />
+            <img src={powderSplash} className={`about-photo2 ${props.mode ? "active" : ""}`} alt='ass' />
           </div>
         </div>
 
